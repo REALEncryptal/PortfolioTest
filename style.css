@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'roboto';
+    src: url('fonts/Roboto-Regular.ttf') format('ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('fonts/Roboto-Bold.ttf') format('ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('fonts/Roboto-Light.ttf') format('ttf');
+    font-weight: lighter;
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    color: white;
+    font-family:  roboto;
+    font-size: 20px;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh; /* Set the height of the body-div */
+
+    background: rgb(38,40,41);
+}
+
+.container {
+    width: 750px;
+    padding: 20px;
+    padding-top: 170px;
+}
+
+.section {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#pfp img{
+    border-radius: 100%;
+    width: 170px;
+}
+
+#pfp {
+    margin-bottom: 50px;
+}
+
+#header {
+    margin-bottom: 100px;
+}
+
+#header h1{
+    font-weight: bold;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+#header p {
+    font-size: 22px;
+    font-weight: lighter;
+    line-height:32px;
+}
+
+.card {
+    background: rgb(71, 75, 77);
+    width: 750px;
+    height: 750px;
+    border-radius: 60px; 
+    position: relative; /* Ensure the parent element is a positioned element */
+    margin-bottom: 70px;
+    background-size: cover;
+}
+
+.inner {
+    position: absolute;
+    bottom: 0;
+    padding: 70px;
+}
+
+.inner h2 {
+    font-weight: lighter;
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+
+.inner h1 {
+    font-weight: bold;
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.inner p {
+    font-size: 27px;
+    margin-bottom: 30px;
+}
+
+.inner a {
+    background: white;
+    color: black;
+    text-decoration: none;
+    padding: 31px;
+    width: 140px;
+    height: 24px;
+    display: flex; 
+    align-content: center;
+    justify-content: center;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+
+.inner a:hover {
+    width: 150px;
+    height: 30px;
+}
+
+
+.card#card1 {
+    background-image: url(imgs/img1.jpg);
+}
+
+.card#card2 {
+    background-image: url(imgs/img2.jpg);
+}
